@@ -6,65 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
     <title>PC NEWS новости в мире hardware</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<script>
-    const articles = Array.from({ length: 100 }, (_, i) => ({
-        title: `Заголовок ${i + 1}`,
-        preview: `Начало содержимого статьи...`,
-        tags: `Тег1, тег2`,
-        date: `31.05.2025 23:59`
-    }));
-    
-    const perPage = 12;
-    let currentPage = 1;
-    
-    function renderCards() {
-        const container = document.getElementById('cards-container');
-        container.innerHTML = '';
-        const start = (currentPage - 1) * perPage;
-        const end = start + perPage;
-        const pageArticles = articles.slice(start, end);
-    
-        for (const article of pageArticles) {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h2 class="card-title">${article.title}</h2>
-                    <p class="card-text">${article.preview}</p>
-                    <div class="card-footer">
-                        <span class="card-tags">${article.tags}</span>
-                        <span class="card-date">${article.date}</span>
-                    </div>
-                </div>
-            `;
-            container.appendChild(card);
-        }
-    }
-    
-    function renderPagination() {
-        const totalPages = Math.ceil(articles.length / perPage);
-        const pagination = document.querySelector('.pagination');
-        pagination.innerHTML = '';
-    
-        for (let i = 1; i <= totalPages; i++) {
-            const btn = document.createElement('button');
-            btn.textContent = i;
-            btn.className = i === currentPage ? 'active' : '';
-            btn.onclick = () => {
-                currentPage = i;
-                renderCards();
-                renderPagination();
-            };
-            pagination.appendChild(btn);
-        }
-    }
-    
-    renderCards();
-    renderPagination();
-</script>
 <body>
     <div class="grid-container">
         <header class="header">
@@ -89,7 +32,8 @@
         </aside>
     
         <main class="main">
-                <div class="card">
+            <div id="cards-container">
+                <button class="card">
                     <div class="card-image">
                         <img>
                     </div>
@@ -103,8 +47,8 @@
                             <span class="card-date">31.05.2025 23:59</span>
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </button>
+                <button class="card">
                     <div class="card-image">
                         <img>
                     </div>
@@ -118,82 +62,9 @@
                             <span class="card-date">31.05.2025 23:59</span>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Заголовок</h2>
-                        <p class="card-text">
-                            Начало содержимого статьи в 2 строки внутри карточки.
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
-                            <span class="card-date">31.05.2025 23:59</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Заголовок</h2>
-                        <p class="card-text">
-                            Начало содержимого статьи в 2 строки внутри карточки.
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
-                            <span class="card-date">31.05.2025 23:59</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Заголовок</h2>
-                        <p class="card-text">
-                            Начало содержимого статьи в 2 строки внутри карточки.
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
-                            <span class="card-date">31.05.2025 23:59</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Заголовок</h2>
-                        <p class="card-text">
-                            Начало содержимого статьи в 2 строки внутри карточки.
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
-                            <span class="card-date">31.05.2025 23:59</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Заголовок</h2>
-                        <p class="card-text">
-                            Начало содержимого статьи в 2 строки внутри карточки.
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
-                            <span class="card-date">31.05.2025 23:59</span>
-                        </div>
-                    </div>
-                </div>
+                </button>
+            </div>
+            <div class="pagination"></div>
         </main>
     
         <footer class="footer">
