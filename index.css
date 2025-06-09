@@ -67,11 +67,11 @@ header.header {
     transform: translateY(5px);
 }
 
-
 .nav-buttons button:active {
     background-color: #151D28;
     color: #E8C170;
 }
+
 main.main {
     grid-area: content;
     background-color: #151D28;

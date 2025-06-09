@@ -9,7 +9,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-rows: 15vh 1fr 15vh;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
         "header header"
         "content content"
@@ -29,8 +29,7 @@ header.header {
     display: flex;
     width: 250px;
     align-items: center;
-    justify-content: center; /* по горизонтали */
-
+    justify-content: center;
 }
 
 .logo {
@@ -48,8 +47,8 @@ header.header {
 
 .nav-buttons button {
     display: flex;
-    align-items: center;    /* по вертикали */
-    justify-content: center; /* по горизонтали */
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 20px;
     color: #202E37;
@@ -67,55 +66,66 @@ header.header {
     transform: translateY(5px);
 }
 
-
 .nav-buttons button:active {
     background-color: #151D28;
     color: #E8C170;
 }
+
 main.main {
     grid-area: content;
     background-color: #151D28;
     padding: 40px 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    color: #C7CFCC;
 }
 
-aside.sidebar {
-    grid-area: sidebar;
-    padding: 40px 20px;
-    background-color: #151D28;
+.article-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.article-photo {
+    width: 200px;
+    height: 200px;
+    background-color: #36454F;
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    flex-grow: 1;
 }
 
-.sidebar button {
+.article-title {
+    color: #819796;
+    font-size: 32px;
+    margin: 0;
+}
+
+.article-meta {
     display: flex;
-    align-items: center;    /* по вертикали */
-    justify-content: center; /* по горизонтали */
-    font-weight: bold;
+    gap: 20px;
+    color: #819796;
+    font-size: 18px;
+}
+
+.article-content {
+    line-height: 1.6;
     font-size: 20px;
-    color: #202E37;
-    background: #819796;
-    border: 2px solid #819796;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    height: 60px;
-    width: 100%;
 }
-
-.sidebar button:hover {
-    background-color: #36454F;
-    color: #151D28;
-    transform: translateX(5px);
-}
-
-.sidebar button:active {
-    background-color: #151D28;
-    color: #E8C170;
-}
-
 
 footer.footer {
     grid-area: footer;
