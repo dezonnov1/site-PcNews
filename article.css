@@ -12,7 +12,7 @@ body {
     grid-template-columns: 250px 1fr;
     grid-template-areas:
         "header header"
-        "sidebar content"
+        "content content"
         "footer footer";
     min-height: 100vh;
 }
@@ -116,83 +116,6 @@ aside.sidebar {
     color: #E8C170;
 }
 
-#cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card {
-    background-color: #829796;
-    border-radius: 6px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 320px;
-    width: 330px;
-    border: 3px solid #829796;
-    border-radius: 6px;
-}
-
-.card-image {
-    background-color: #151D28;
-    height: 70%;
-    border-radius: 6px;
-}
-
-.card-content {
-    padding: 10px;
-    color: #10141F;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50%;
-}
-
-.card-title {
-    font-size: 20px;
-    margin: 0 0 5px 0;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 16px;
-    margin: 0 0 10px 0;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.pagination {
-    display: flex;
-    gap: 10px;
-}
-
-.pagination-wrapper {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.pagination button {
-    padding: 8px 12px;
-    background-color: #202E37;
-    color: #C7CFCC;
-    border: 2px solid #C7CFCC;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.pagination button.active,
-.pagination button:hover {
-    background-color: #C7CFCC;
-    color: #202E37;
-}
 
 footer.footer {
     grid-area: footer;

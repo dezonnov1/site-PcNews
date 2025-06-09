@@ -15,20 +15,20 @@
                 <img src="./icons/logo.svg" alt="PC NEWS Logo" class="logo">
             </div>
             <nav class="nav-buttons">
-                <button>Главная</button>
-                <button>Рассылка</button>
+                <button id="main">Главная</button>
+                <button id="malling">Рассылка</button>
             </nav>
         </header>
     
         <aside class="sidebar">
-            <button>Процессоры</button>
-            <button>Видеокарты</button>
-            <button>Оперативная память</button>
-            <button>Материнские платы</button>
-            <button>Накопители</button>
-            <button>Блоки питания</button>
-            <button>Корпусы</button>
-            <button>Охлаждение</button>
+            <button id="cpu">Процессоры</button>
+            <button id="gpu">Видеокарты</button>
+            <button id="ram">Оперативная память</button>
+            <button id="mb">Материнские платы</button>
+            <button id="drive">Накопители</button>
+            <button id="psu">Блоки питания</button>
+            <button id="case">Корпусы</button>
+            <button id="cooler">Охлаждение</button>
         </aside>
     
         <main class="main">
@@ -43,7 +43,7 @@
                             Начало содержимого статьи в 2 строки внутри карточки.
                         </p>
                         <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
+                            <span class="card-tags">Тег1</span>
                             <span class="card-date">31.05.2025 23:59</span>
                         </div>
                     </div>
@@ -58,13 +58,81 @@
                             Начало содержимого статьи в 2 строки внутри карточки.
                         </p>
                         <div class="card-footer">
-                            <span class="card-tags">Тег1, тег2</span>
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
                             <span class="card-date">31.05.2025 23:59</span>
                         </div>
                     </div>
                 </button>
             </div>
-            <div class="pagination"></div>
+            <div class="pagination-wrapper">
+                <div class="pagination">
+                  <button>&laquo;</button>
+                  <button class="active">1</button>
+                  <button>2</button>
+                  <button>3</button>
+                  <button>&raquo;</button>
+                </div>
+              </div>
         </main>
     
         <footer class="footer">
@@ -73,5 +141,7 @@
             </div>
         </footer>
     </div>
+    <script src="./scripts/buttons.js"></script>
+    <script src="./scripts/pagination.js"></script>
 </body>
 </html>
