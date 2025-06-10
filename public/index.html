@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <title>PC NEWS новости в мире hardware</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="./icons/logo.svg" alt="PC NEWS Logo" class="logo">
+            </div>
+            <nav class="nav-buttons">
+                <button id="main">Главная</button>
+                <button id="malling">Рассылка</button>
+            </nav>
+        </header>
+    
+        <aside class="sidebar">
+            <button id="cpu">Процессоры</button>
+            <button id="gpu">Видеокарты</button>
+            <button id="ram">Оперативная память</button>
+            <button id="mb">Материнские платы</button>
+            <button id="drive">Накопители</button>
+            <button id="psu">Блоки питания</button>
+            <button id="case">Корпусы</button>
+            <button id="cooler">Охлаждение</button>
+        </aside>
+    
+        <main class="main">
+            <div id="cards-container">
+                <button class="card" id="1">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="card">
+                    <div class="card-image">
+                        <img>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Заголовок</h2>
+                        <p class="card-text">
+                            Начало содержимого статьи в 2 строки внутри карточки.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-tags">Тег1</span>
+                            <span class="card-date">31.05.2025 23:59</span>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="pagination-wrapper">
+                <div class="pagination">
+                  <button>&laquo;</button>
+                  <button class="active">1</button>
+                  <button>2</button>
+                  <button>3</button>
+                  <button>&raquo;</button>
+                </div>
+              </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="author-info">
+                Сделал студент ИТСС-О-23\1<br>Кузнецов Даниил
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/pagination.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/tags.js"></script>
+    <script src="./scripts/articlesLoader.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #DF84A5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 15vh 1fr 15vh;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    min-height: 100vh;
+}
+
+header.header {
+    grid-area: header;
+    background-color: #202E37;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: center; /* по горизонтали */
+
+}
+
+.logo {
+    height: 15vh;
+    width: auto;
+    display: block;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+
+.nav-buttons button {
+    display: flex;
+    align-items: center;    /* по вертикали */
+    justify-content: center; /* по горизонтали */
+    font-weight: bold;
+    font-size: 20px;
+    color: #202E37;
+    background: #819796;
+    border: 2px solid #819796;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    height: 60px;
+    width: 20%;
+}
+
+.nav-buttons button:hover {
+    background-color: #36454F;
+    color: #151D28;
+    transform: translateY(5px);
+}
+
+.nav-buttons button:active {
+    background-color: #151D28;
+    color: #E8C170;
+}
+
+main.main {
+    grid-area: content;
+    background-color: #151D28;
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+aside.sidebar {
+    grid-area: sidebar;
+    padding: 40px 20px;
+    background-color: #151D28;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar button {
+    display: flex;
+    align-items: center;    /* по вертикали */
+    justify-content: center; /* по горизонтали */
+    font-weight: bold;
+    font-size: 20px;
+    color: #202E37;
+    background: #819796;
+    border: 2px solid #819796;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    height: 60px;
+    width: 100%;
+}
+
+.sidebar button:hover {
+    background-color: #36454F;
+    color: #151D28;
+    transform: translateX(5px);
+}
+
+.sidebar button:active {
+    background-color: #151D28;
+    color: #E8C170;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #829796;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 330px;
+    border: 3px solid #829796;
+    border-radius: 6px;
+}
+
+.card-image {
+    background-color: #151D28;
+    height: 70%;
+    border-radius: 6px;
+}
+
+.card-content {
+    padding: 10px;
+    color: #10141F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination button {
+    padding: 8px 12px;
+    background-color: #202E37;
+    color: #C7CFCC;
+    border: 2px solid #C7CFCC;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination button.active,
+.pagination button:hover {
+    background-color: #C7CFCC;
+    color: #202E37;
+}
+
+footer.footer {
+    grid-area: footer;
+    background-color: #10141F;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.author-info {
+    color: #C7CFCC;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
