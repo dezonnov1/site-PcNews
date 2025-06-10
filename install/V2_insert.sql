@@ -36,15 +36,15 @@ INSERT INTO articles (image, title, text, tag, date) VALUES
 ('images/ram13.jpg', 'Новинки G.Skill Trident Z RGB Series 32GB (4 x 8GB) DDR4-3600 CL15', 'G.Skill представила свои новинки, включая...', 'ram', NOW());
 
 INSERT INTO articles  (image, title, text, tag, date) VALUES
-('images/mb5.jpg', 'Новинки материнских плат ASUS TUF GAMING B460-PLUS', 'ASUS представила свои новинки, включая...', 'motherboard', NOW()),
-('images/mb6.jpg', 'Новинки материнских плат GIGABYTE AERO 15 ATX AM4', 'GIGABYTE представила свои новинки, включая...', 'motherboard', NOW()),
-('images/mb7.jpg', 'Как выбрать материнскую плату для своей системы?', 'Есть ли миллионы компонентов вашей новой компьютерной...', 'motherboard', NOW()),
-('images/mb8.jpg', 'Новинки материнских плат ASRock X570 Phantom Gaming 4 ATX AM4', 'ASRock представила свои новинки, включая...', 'motherboard', NOW()),
-('images/mb9.jpg', 'Новинки материнских плат MSI B450-A PRO MAX AM4','MSI представила свои новинки, включая...',  'motherboard', NOW()),
-('images/mb10.jpg', 'Новинки материнских плат GIGABYTE X570S AERO GAMING ATX AM4','GIGABYTE представила свои новинки, включая...',  'motherboard', NOW()),
-('images/mb11.jpg', 'Новинки материнских плат ASUS TUF B560-PLUS GAMING WIFI ATX AM4','ASUS представила свои новинки, включая...',  'motherboard', NOW()),
-('images/mb12.jpg', 'Новинки материнских плат EVGA 750-GAMING S6 ATX AM4','EVGA представила свои новинки, включая...',  'motherboard', NOW()),
-('images/mb13.jpg', 'Новинки материнских плат MSI Z490-A PRO ATX AM4','MSI представила свои новинки, включая...',  'motherboard', NOW());
+('images/mb5.jpg', 'Новинки материнских плат ASUS TUF GAMING B460-PLUS', 'ASUS представила свои новинки, включая...', 'mb', NOW()),
+('images/mb6.jpg', 'Новинки материнских плат GIGABYTE AERO 15 ATX AM4', 'GIGABYTE представила свои новинки, включая...', 'mb', NOW()),
+('images/mb7.jpg', 'Как выбрать материнскую плату для своей системы?', 'Есть ли миллионы компонентов вашей новой компьютерной...', 'mb', NOW()),
+('images/mb8.jpg', 'Новинки материнских плат ASRock X570 Phantom Gaming 4 ATX AM4', 'ASRock представила свои новинки, включая...', 'mb', NOW()),
+('images/mb9.jpg', 'Новинки материнских плат MSI B450-A PRO MAX AM4','MSI представила свои новинки, включая...',  'mb', NOW()),
+('images/mb10.jpg', 'Новинки материнских плат GIGABYTE X570S AERO GAMING ATX AM4','GIGABYTE представила свои новинки, включая...',  'mb', NOW()),
+('images/mb11.jpg', 'Новинки материнских плат ASUS TUF B560-PLUS GAMING WIFI ATX AM4','ASUS представила свои новинки, включая...',  'mb', NOW()),
+('images/mb12.jpg', 'Новинки материнских плат EVGA 750-GAMING S6 ATX AM4','EVGA представила свои новинки, включая...',  'mb', NOW()),
+('images/mb13.jpg', 'Новинки материнских плат MSI Z490-A PRO ATX AM4','MSI представила свои новинки, включая...',  'mb', NOW());
 
 INSERT INTO articles (image, title, text, tag, date) VALUES 
 ('images/ssd1.jpg', 'Новинки SSD-накопителей Corsair Vengeance Pro 250GB', 'Corsair представила свои новинки...', 'drive', NOW()),
